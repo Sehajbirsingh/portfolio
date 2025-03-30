@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sehajbir Singh | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="cursor-trail"></div> <!-- Needs JS uncommented if desired -->
+
+    <header>
+        <nav>
+            <div class="logo">Sehajbir Singh</div>
+            <ul>
+                <li><a href="#hero">//Start</a></li>
+                <li><a href="#experience">//Experience</a></li>
+                <li><a href="#projects">//Projects</a></li>
+                <li><a href="#skills">//Skills</a></li>
+                <li><a href="#contact">//Contact</a></li>
+                 <li><a href="assets/resume.pdf" class="nav-button resume-button" download="Sehajbir_Singh_Resume.pdf">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="section-container">
+            <h1>Sehajbir Singh</h1>
+            <p class="subtitle">Data Engineer | AI/ML Enthusiast</p>
+            <!-- Added Location -->
+            <p class="location">📍 Mississauga, ON, Canada</p> 
+            <p>Post Grad: Applied AI Solutions @ George Brown College, Toronto (2025)</p>
+            <div class="certifications">
+                <span>🏆 AWS Certified Developer Associate</span>
+                <span>🎓 DeepLearning.ai Data Engineer Certificate (In Progress)</span>
+            </div>
+            <p class="summary-text">
+                I am a versatile data professional with over 1.5 years of experience in Data Engineering and Analytics within cloud-based, Agile environments. Skilled in developing ETL pipelines, optimizing SQL queries, and working with cloud platforms, I ensure efficient data flow and scalability. My expertise also includes data visualization and generating AI-driven insights, with hands-on experience in Generative AI, NLP, and deep learning projects. I thrive in dynamic environments, leveraging automation and data storytelling to support intelligent decision-making.
+            </p>
+             <a href="#experience" class="cta-button">Explore My Journey</a>
+        </section>
+
+        <section id="experience" class="section-container">
+            <h2>// Experience</h2>
+            <div class="experience-item">
+                <div class="company-header">
+                     <!-- Link added around the logo -->
+                     <a href="https://cloudeqs.com/" target="_blank" rel="noopener noreferrer" aria-label="CloudEQS Website" class="logo-link">
+                        <img src="assets/images/CloudEQS_logo.png" alt="CloudEQS Logo" class="company-logo">
+                     </a>
+                     <h3>Data Engineer @ CloudEQS</h3>
+                </div>
+                 <span>Aug 2023 – Jul 2024 | Remote</span>
+
+                <div class="client-section">
+                    <h4>Clients:</h4>
+                    <div class="client">
+                        <!-- Logo in its own div on top -->
+                        <a href="https://www.peets.com/" target="_blank" rel="noopener noreferrer" aria-label="Peet's Coffee Website" class="logo-link">
+                            <img src="assets/images/Peets_Coffee_logo.png" alt="Peet's Coffee Logo" class="client-logo">
+                        </a>
+                        <!-- Content in a separate div below -->
+                        <div class="client-content">
+                            <p><strong>Peet's Coffee (Contract):</strong> Designed & implemented Matillion ETL/ELT workflows (NetSuite/SQL Server -> Snowflake). Built Streamlit monitoring dashboard. Implemented SCD Type 2. Optimized OLAP datasets (Azure ADLS). Automated archiving (Matillion/Selenium). Developed Python test frameworks.</p>
+                            <p class="tech-stack">Tech: Matillion, DBT, Snowflake, Azure, Python, SQL Server, NetSuite, ADLS, Streamlit, Selenium</p>
+                        </div>
+                    </div>
+                    
+                    <div class="client">
+                        <!-- Logo in its own div on top -->
+                        <a href="https://www.deltadental.com/" target="_blank" rel="noopener noreferrer" aria-label="Delta Dental Website" class="logo-link">
+                            <img src="assets/images/Delta_Dental_logo.png" alt="Delta Dental Logo" class="client-logo">
+                        </a>
+                        <!-- Content in a separate div below -->
+                        <div class="client-content">
+                            <p><strong>Delta Dental (Contract):</strong> Developed SQL conversion accelerator (SQL Server -> Snowflake, 90% time saved) using Python/ReGEx. Migrated HIPAA-compliant SAP BOBJ reports to Snowflake.</p>
+                            <p class="tech-stack">Tech: Snowflake, Python, SAP BOBJ, SQL Server, Azure DevOps, ReGEx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-container">
+            <h2>// Projects</h2>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Projects will be dynamically loaded here by script.js -->
+                <div class="loading-placeholder">Loading Projects...</div> 
+            </div>
+        </section>
+
+        <!-- Project Modal -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <h3 id="modal-title">Project Title</h3>
+                <img id="modal-image" src="" alt="Project Image" class="modal-image">
+                <p id="modal-description">Project Description</p>
+                <p id="modal-tech-stack" class="tech-stack"></p>
+                <div id="modal-links">
+                    <!-- Links will be added here -->
+                </div>
+            </div>
+        </div>
+
+        <section id="skills" class="section-container">
+            <h2>// Skills</h2>
+            <ul class="skills-list">
+                 <div class="loading-placeholder">Loading Skills...</div> 
+                <!-- Skills will be dynamically loaded here by script.js -->
+            </ul>
+        </section>
+
+        <!-- === NEW EDUCATION SECTION START === -->
+        <section id="education" class="section-container">
+            <h2>// Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <p class="degree">Post Graduate Diploma in Applied AI Solutions</p>
+                    <p class="institution">George Brown College</p>
+                    <p class="location-year">Toronto, ON, Canada | 2025</p>
+                </div>
+                <div class="education-item">
+                    <p class="degree">Bachelors in Computer Science Engineering</p>
+                    <p class="institution">Punjab Technical University</p>
+                    <p class="location-year">Punjab, India | 2023</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Social Media Section -->
+        <section id="socials" class="section-container">
+            <h2>// Connect</h2>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/sehajbir-singh-542b34207" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                     <!-- Use img tag for logo -->
+                    <img src="assets/images/linkedin-logo.svg" alt="LinkedIn" class="social-icon"> 
+                </a>
+                <a href="https://github.com/sehajbirsingh" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                     <!-- Use img tag for logo -->
+                    <img src="assets/images/github-logo.png" alt="GitHub" class="social-icon"> 
+                </a>
+                <a href="https://x.com/Sehaj_1212" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) Profile">
+                     <!-- Use img tag for logo -->
+                     <img src="assets/images/x-logo.png" alt="X (Twitter)" class="social-icon"> 
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section-container">
+            <h2>// Contact</h2>
+            <p>Interested in collaborating or discussing an opportunity?</p>
+            <p>Reach out via <a href="mailto:your-email@example.com" class="contact-link">sehajbakshi12@gmail.com</a></p>
+            <p class="terminal-prompt">></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Sehajbir Singh. All rights reserved.</p>
+        <p>Status: Connection established // Ready</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
